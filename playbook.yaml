@@ -5,7 +5,7 @@
   tasks:
 
     - name: Install Docker
-      yum:
+      apt:
         name: docker
         state: present
 
@@ -16,12 +16,12 @@
         enabled: yes
 
     - name: Install Git
-      yum:
+      apt:
         name: git
         state: present
 
     - name: Install Maven
-      yum:
+      apt:
         name: maven
         state: present
         
